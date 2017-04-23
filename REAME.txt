@@ -1,0 +1,16 @@
+Code for fast projecting a bipartite network
+Output:
+1. bip_file_aggregated.txt is the bipartite network without features which appear only once
+2. projected.txt is the unipartite network
+
+
+-f [string]: name of the network file [node feature weight]
+-outfolder [string]: name of outfolder. default is cwd.
+-cf [int]: number of candidates per feature. Default is 1000
+-neigh [int]: minimum number of neighbors which are printed for each node. Default is 10
+-th [float]: cosine similarity threshold. Values higher than this are printed. Default is 0.3
+-cosine use this flag to use cosine similarity intead of random walk similarity
+-okself prints self-loops too (rw only).
+
+Basic example: 
+./bin/fast_project -f [network_file]
