@@ -1,4 +1,11 @@
 Code for fast projecting a bipartite network
+
+Compile with './compile.sh'
+
+Input:
+
+Bipartite network file network_file with line syntax [node feature weight] to be projected on the nodes.
+
 Output:
 1. bip_file_aggregated.txt is the bipartite network without features which appear only once
 2. projected.txt is the unipartite network
